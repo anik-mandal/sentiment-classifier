@@ -28,3 +28,5 @@ build/
 Thumbs.db
 .idea/
 .vscode/
+
+sentiment-ui/
