@@ -1,0 +1,4 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+# base libs already present: torch, transformers==4.56.2, tokenizers==0.22.0, numpy, pandas
+

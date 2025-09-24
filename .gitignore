@@ -1,0 +1,30 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+*.log
+
+# Data and models
+data/*.csv
+models/
+releases/
+runtime/
+
+# Backups and installers
+*.bak
+DockerDesktopInstaller.exe
+
+# Node/Frontend caches at root if any
+node_modules/
+dist/
+build/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
