@@ -28,8 +28,6 @@ build/
 Thumbs.db
 .idea/
 .vscode/
-<<<<<<< HEAD
 
+# Frontend
 sentiment-ui/
-=======
->>>>>>> temp-branch
