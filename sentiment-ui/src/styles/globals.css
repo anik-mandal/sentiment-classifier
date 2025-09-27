@@ -1,0 +1,30 @@
+﻿.hero-gradient {
+  background: radial-gradient(100% 100% at 50% 0%, rgba(127, 90, 240, 0.45) 0%, rgba(11, 13, 18, 0.05) 60%, rgba(11, 13, 18, 0.9) 100%);
+}
+
+.layer-gradient {
+  background: linear-gradient(135deg, rgba(127, 90, 240, 0.2) 0%, rgba(11, 13, 18, 0.8) 40%, rgba(11, 13, 18, 1) 100%);
+}
+
+.fade-border {
+  position: relative;
+}
+
+.fade-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(127, 90, 240, 0.45), rgba(255, 255, 255, 0.05));
+  -webkit-mask: linear-gradient(#000, #000) content-box, linear-gradient(#000, #000);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.text-glow {
+  text-shadow: 0 0 40px rgba(127, 90, 240, 0.35);
+}
+
+
