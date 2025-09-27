@@ -1,33 +1,46 @@
 # Python
-venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
 .venv/
+venv/
+.Python
 *.log
+.env
 
-# Data and models
+# Data (keep only tiny demos)
 data/*.csv
-models/
+data/*.xlsx
+data/*.xls
+!data/samples/**
+data/samples/**
+
+# Models: keep configs/tokenizer; ignore heavy weights & checkpoints
+models/**/pytorch_model.bin
+models/**/model.safetensors
+models/**/optimizer.pt
+models/**/scheduler.pt
+models/**/trainer_state.json
+**/checkpoint-*/
+
+# Optionally keep tokenizer + config files tracked
+# (config.json, tokenizer_config.json, sentencepiece.bpe.model, label_mapping.json)
+
+# Releases / artifacts
 releases/
 runtime/
+logs/
+runs/
+*.tmp
 
-# Backups and installers
-*.bak
-DockerDesktopInstaller.exe
-
-# Node/Frontend caches at root if any
+# Node/Frontend
 node_modules/
 dist/
 build/
 
-# OS/editor
+# OS/Editor
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
-
-# Frontend
-sentiment-ui/
